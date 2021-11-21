@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Object_Oriented_Programming_CSharp
+namespace Hello_World 
 {
     public class Program
     {
