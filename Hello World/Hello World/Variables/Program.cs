@@ -32,6 +32,20 @@ namespace Learning_csharp
 
             Console.WriteLine(wage);
 
+
+            Console.WriteLine("*-----Conversions-----*");
+
+            float floatingPoint = 3.14f;
+
+            double wage2 = 1270.50;
+            int value = (int)wage2;
+            Console.WriteLine(value);
+
+            double value1 = 0.2;
+            double value2 = 0.1;
+            double total = value1 + value2;
+
+            Console.WriteLine(total);
         }
     }
 }
