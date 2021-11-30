@@ -24,7 +24,14 @@ namespace Learning_csharp
             number = 10 + 5 * 2;
             Console.WriteLine("Your number is: " + number);
 
-         
+
+            Console.WriteLine("*-----Double-----*");
+
+            double wage;
+            wage = 1220.70;
+
+            Console.WriteLine(wage);
+
         }
     }
 }
