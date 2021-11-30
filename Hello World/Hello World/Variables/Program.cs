@@ -46,6 +46,25 @@ namespace Learning_csharp
             double total = value1 + value2;
 
             Console.WriteLine(total);
+
+
+            Console.WriteLine("*-----Char and String-----*");
+
+            char letter = 'a';
+            Console.WriteLine(letter);
+
+            //char value3 = 65;                    // error!
+            //Console.WriteLine(value3);
+
+            char value3 = (char) 65;
+            value3 = (char)(value3 + 1);         // right!
+            Console.WriteLine(value3);
+
+            string word = "alura cursos online de tecnologia";
+            Console.WriteLine(word);
+
+            word = word + 2020;
+            Console.WriteLine(word);
         }
     }
 }
