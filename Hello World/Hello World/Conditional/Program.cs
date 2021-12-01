@@ -32,7 +32,19 @@ namespace Learning_csharp
                 }
             }
 
-            
+            Console.WriteLine("----IF bool----");
+
+            int ageJoao = 18;
+            bool alone = true;
+
+            if (ageJoao >= 18 && alone == false)
+            {
+                Console.WriteLine("Can join");
+            }
+            else
+            {
+                Console.WriteLine("Can't join");
+            }
         }
     }
 }
