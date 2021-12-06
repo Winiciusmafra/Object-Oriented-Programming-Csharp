@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello World", "Hello World\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Variables", "Variables\Variables.csproj", "{B23741AF-C58F-4977-9087-B5FCBE9615C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conditional", "Conditional\Conditional.csproj", "{FE65CBBD-3517-4AB9-8399-7199BF0BBF8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conditional", "Conditional\Conditional.csproj", "{FE65CBBD-3517-4AB9-8399-7199BF0BBF8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops", "Loops\Loops.csproj", "{3E3AA52F-A984-4424-9F70-3D92A9CE6CF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{FE65CBBD-3517-4AB9-8399-7199BF0BBF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE65CBBD-3517-4AB9-8399-7199BF0BBF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE65CBBD-3517-4AB9-8399-7199BF0BBF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E3AA52F-A984-4424-9F70-3D92A9CE6CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3AA52F-A984-4424-9F70-3D92A9CE6CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3AA52F-A984-4424-9F70-3D92A9CE6CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3AA52F-A984-4424-9F70-3D92A9CE6CF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
