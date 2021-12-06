@@ -21,6 +21,17 @@ namespace Learning_csharp
                 monthCounter = monthCounter + 1;
 
             }
+
+            Console.WriteLine("----FOR----");
+
+
+            for (int i = 1; i <= 12; i++)
+            {
+                investedAmount *= 1.0036;
+                Console.WriteLine(
+                    "After " + i +
+                    " month, you will have: " + "R$" + investedAmount);
+            }
         }
     }
 }
