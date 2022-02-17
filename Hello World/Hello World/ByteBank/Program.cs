@@ -8,8 +8,15 @@ namespace Learning_csharp
     {
         public static void Main(string[] args)
         {
-            new CurrentAcconut();
-
+            CurrentAcconut currentWinicius = new CurrentAcconut();
+            currentWinicius.holder = "Winicius";
+            currentWinicius.agency = 0001;
+            currentWinicius.currentAccount = 29384;
+            currentWinicius.balance = 2000;
+            Console.WriteLine("Name: " + currentWinicius.holder);
+            Console.WriteLine("Agency: " + currentWinicius.agency);
+            Console.WriteLine("Account: " + currentWinicius.currentAccount);
+            Console.WriteLine("Balance: " + currentWinicius.balance);
             Console.ReadLine();
 
         }
