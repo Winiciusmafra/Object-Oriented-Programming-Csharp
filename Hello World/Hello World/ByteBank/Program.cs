@@ -18,9 +18,14 @@ namespace Learning_csharp
             //Console.WriteLine("Account: " + currentWinicius.currentAccount);
             Console.WriteLine("Balance: " + currentWinicius.balance);
             /*----------------------------------------------------*/
-            currentWinicius.withdraw(50);
+            currentWinicius.Withdraw(50);
+            Console.WriteLine("Withdraw made of: " + 50);
             Console.WriteLine("New Balance: " + currentWinicius.balance);
-            
+
+            currentWinicius.Deposit(20);
+            Console.WriteLine("Deposit made of: " + 20);
+            Console.WriteLine("New Balance: " + currentWinicius.balance);
+
             Console.ReadLine();
 
         }

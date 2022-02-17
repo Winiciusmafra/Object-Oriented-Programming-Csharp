@@ -5,7 +5,7 @@
     public int currentAccount;
     public double balance;
 
-    public bool withdraw(double value)
+    public bool Withdraw(double value)
     {
         if (this.balance < value)
         {
@@ -20,4 +20,11 @@
         }
     }
 
+    public void Deposit(double value)
+    {
+        if (value>0)
+        {
+            this.balance += value;
+        }
+    }
 }
