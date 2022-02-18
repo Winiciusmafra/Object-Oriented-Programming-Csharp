@@ -9,9 +9,9 @@
     {
         if (this.balance < value)
         {
-            
+
             return false;
-            
+
         }
         else
         {
@@ -22,9 +22,23 @@
 
     public void Deposit(double value)
     {
-        if (value>0)
+        if (value > 0)
         {
             this.balance += value;
+        }
+    }
+
+    public bool Transfer(double value, CurrentAcconut current)
+    {
+        if (this.balance < value)
+        {
+            return false;
+        }
+        else
+        {
+            this.balance -= value;
+            current.Deposit(value);
+            return true;
         }
     }
 }

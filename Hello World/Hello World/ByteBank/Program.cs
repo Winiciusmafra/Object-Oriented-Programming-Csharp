@@ -9,6 +9,7 @@ namespace Learning_csharp
         public static void Main(string[] args)
         {
             CurrentAcconut currentWinicius = new CurrentAcconut();
+            
             currentWinicius.holder = "Winicius";
             currentWinicius.agency = 0001;
             currentWinicius.currentAccount = 29384;
@@ -25,6 +26,20 @@ namespace Learning_csharp
             currentWinicius.Deposit(20);
             Console.WriteLine("Deposit made of: " + 20);
             Console.WriteLine("New Balance: " + currentWinicius.balance);
+
+            /*-------------------Function Transfer---------------------------------*/
+            CurrentAcconut currentMariana = new CurrentAcconut();
+            currentMariana.holder = "Mariana";
+            currentMariana.agency = 0201;
+            currentMariana.currentAccount = 29324;
+            currentMariana.balance = 0;
+            Console.WriteLine("Previous value: Winicius - " + currentWinicius.balance);
+            Console.WriteLine("Previous value: Mariana - " + currentMariana.balance);
+            currentWinicius.Transfer(10, currentMariana);
+            Console.WriteLine("Winicius made a trasnfer of : " + 10 + " from Mariana");
+            Console.WriteLine("New value: Winicius - " + currentWinicius.balance);
+            Console.WriteLine("New value: Mariana - " + currentMariana.balance);
+
 
             Console.ReadLine();
 
