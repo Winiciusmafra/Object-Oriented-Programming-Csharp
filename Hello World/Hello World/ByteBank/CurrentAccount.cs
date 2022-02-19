@@ -1,44 +1,49 @@
-﻿public class CurrentAcconut
-{
-    public string holder;
-    public int agency;
-    public int currentAccount;
-    public double balance;
+﻿using ByteBank;
 
-    public bool Withdraw(double value)
+namespace ByteBank{
+
+    public class CurrentAcconut
     {
-        if (this.balance < value)
-        {
+        public Holder holder;
+        public int agency;
+        public int currentAccount;
+        public double balance;
 
-            return false;
+        public bool Withdraw(double value)
+        {
+            if (this.balance < value)
+            {
 
-        }
-        else
-        {
-            balance -= value;
-            return true;
-        }
-    }
+                return false;
 
-    public void Deposit(double value)
-    {
-        if (value > 0)
-        {
-            this.balance += value;
+            }
+            else
+            {
+                balance -= value;
+                return true;
+            }
         }
-    }
 
-    public bool Transfer(double value, CurrentAcconut current)
-    {
-        if (this.balance < value)
+        public void Deposit(double value)
         {
-            return false;
+            if (value > 0)
+            {
+                this.balance += value;
+            }
         }
-        else
+
+        public bool Transfer(double value, CurrentAcconut current)
         {
-            this.balance -= value;
-            current.Deposit(value);
-            return true;
+            if (this.balance < value)
+            {
+                return false;
+            }
+            else
+            {
+                this.balance -= value;
+                current.Deposit(value);
+                return true;
+            }
         }
     }
 }

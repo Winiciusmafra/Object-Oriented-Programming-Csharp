@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ByteBank;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -10,7 +11,7 @@ namespace Learning_csharp
         {
             CurrentAcconut currentWinicius = new CurrentAcconut();
             
-            currentWinicius.holder = "Winicius";
+            //currentWinicius.holder = "Winicius";
             currentWinicius.agency = 0001;
             currentWinicius.currentAccount = 29384;
             currentWinicius.balance = 2000;
@@ -29,7 +30,7 @@ namespace Learning_csharp
 
             /*-------------------Function Transfer---------------------------------*/
             CurrentAcconut currentMariana = new CurrentAcconut();
-            currentMariana.holder = "Mariana";
+            //currentMariana.holder = "Mariana";
             currentMariana.agency = 0201;
             currentMariana.currentAccount = 29324;
             currentMariana.balance = 0;
@@ -40,6 +41,8 @@ namespace Learning_csharp
             Console.WriteLine("New value: Winicius - " + currentWinicius.balance);
             Console.WriteLine("New value: Mariana - " + currentMariana.balance);
 
+            /*1.3 - namespace*/
+            Holder Winicius = new Holder();
 
             Console.ReadLine();
 
