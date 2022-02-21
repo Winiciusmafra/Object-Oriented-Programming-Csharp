@@ -1,13 +1,14 @@
 ﻿using ByteBank;
 
-namespace ByteBank{
+namespace ByteBank
+{
 
     public class CurrentAcconut
     {
         public Holder holder;
         public int agency;
         public int currentAccount;
-        public double balance;
+        private double balance;
 
         public bool Withdraw(double value)
         {
@@ -45,5 +46,23 @@ namespace ByteBank{
                 return true;
             }
         }
+
+        public double GetBalance()
+        {
+            return this.balance;
+        }
+
+        public void SetBalance(double value)
+        {
+            if (balance < 0)
+            {
+                return;
+            }
+            else
+            {
+                this.balance = value;
+            }
+        }
+
     }
 }

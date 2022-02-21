@@ -50,9 +50,11 @@ namespace Learning_csharp
             current.holder = Winicius;
             current.agency = 1548;
             current.currentAccount = 5484777;
-            current.balance = 1488;
-            Console.WriteLine(Winicius.name);
-            Console.WriteLine(current.holder.name);
+            //current.balance = 1488;
+            //Console.WriteLine(Winicius.name);
+            //Console.WriteLine(current.holder.name);
+            current.SetBalance(10);
+            Console.WriteLine(current.GetBalance());
 
 
             Console.ReadLine();
