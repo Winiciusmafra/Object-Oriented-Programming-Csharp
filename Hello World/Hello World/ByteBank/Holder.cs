@@ -8,8 +8,8 @@ namespace ByteBank
 {
     public class Holder
     {
-        public string name;
-        public string cpf;
-        public string profession;
+        public string Name { get; set; }
+        public string Cpf { get; set; }
+        public string Profession { get; set; }
     }
 }

@@ -43,9 +43,9 @@ namespace Learning_csharp
 
             /*1.4 - namespace*/
             Holder Winicius = new Holder();
-            Winicius.name = "Winicius";
-            Winicius.cpf = "35968475125";
-            Winicius.profession = "Student";
+            Winicius.Name = "Winicius";
+            Winicius.Cpf = "35968475125";
+            Winicius.Profession = "Student";
             CurrentAcconut current = new CurrentAcconut();
             current.Holder = Winicius;
             current.agency = 1548;

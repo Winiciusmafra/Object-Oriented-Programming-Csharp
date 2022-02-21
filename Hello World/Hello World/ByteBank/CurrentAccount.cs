@@ -5,12 +5,12 @@ namespace ByteBank
 
     public class CurrentAcconut
     {
-        private Holder _holder;
-        public int agency;
-        public int currentAccount;
+        private int _agency;
+        private int _currentAccount;
         private double _balance;
-
-        public Holder Holder { get; set; } 
+        public int agency { get; set; }
+        public int currentAccount { get; set; }
+        public Holder Holder { get; set; }
         public double Balance
         {
             get
@@ -67,7 +67,7 @@ namespace ByteBank
             }
         }
 
-       
+
 
     }
 }
