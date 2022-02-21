@@ -5,10 +5,30 @@ namespace ByteBank
 
     public class CurrentAcconut
     {
-        public Holder holder;
+        private Holder _holder;
         public int agency;
         public int currentAccount;
-        private double balance;
+        private double _balance;
+
+        public Holder Holder { get; set; } 
+        public double Balance
+        {
+            get
+            {
+                return this._balance;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    return;
+                }
+                else
+                {
+                    this._balance = value;
+                }
+            }
+        }
 
         public bool Withdraw(double value)
         {
@@ -47,22 +67,7 @@ namespace ByteBank
             }
         }
 
-        public double GetBalance()
-        {
-            return this.balance;
-        }
-
-        public void SetBalance(double value)
-        {
-            if (balance < 0)
-            {
-                return;
-            }
-            else
-            {
-                this.balance = value;
-            }
-        }
+       
 
     }
 }

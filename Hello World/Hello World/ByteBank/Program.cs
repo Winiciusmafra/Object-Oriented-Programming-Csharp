@@ -47,14 +47,14 @@ namespace Learning_csharp
             Winicius.cpf = "35968475125";
             Winicius.profession = "Student";
             CurrentAcconut current = new CurrentAcconut();
-            current.holder = Winicius;
+            current.Holder = Winicius;
             current.agency = 1548;
             current.currentAccount = 5484777;
             //current.balance = 1488;
             //Console.WriteLine(Winicius.name);
             //Console.WriteLine(current.holder.name);
-            current.SetBalance(10);
-            Console.WriteLine(current.GetBalance());
+            current.Balance = 10;
+            Console.WriteLine(current.Balance);
 
 
             Console.ReadLine();
