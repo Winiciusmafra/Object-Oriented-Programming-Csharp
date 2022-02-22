@@ -30,6 +30,12 @@ namespace ByteBank
             }
         }
 
+        public CurrentAcconut(int agency, int currentAccount )
+        {
+            this.agency = agency;
+            this.currentAccount = currentAccount; 
+        }
+
         public bool Withdraw(double value)
         {
             if (this.balance < value)
