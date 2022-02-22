@@ -30,15 +30,20 @@ namespace ByteBank
             }
         }
 
+        //static belongs to class
+        public static int _totalAccountsCreated { get; private set; }
+
         public CurrentAcconut(int agency, int currentAccount )
         {
-            this.agency = agency;
-            this.currentAccount = currentAccount; 
+            this._agency = agency;
+            this._currentAccount = currentAccount;
+            CurrentAcconut._totalAccountsCreated++;
         }
+
 
         public bool Withdraw(double value)
         {
-            if (this.balance < value)
+            if (this._balance < value)
             {
 
                 return false;
@@ -46,7 +51,7 @@ namespace ByteBank
             }
             else
             {
-                balance -= value;
+                _balance -= value;
                 return true;
             }
         }
@@ -55,19 +60,19 @@ namespace ByteBank
         {
             if (value > 0)
             {
-                this.balance += value;
+                this._balance += value;
             }
         }
 
         public bool Transfer(double value, CurrentAcconut current)
         {
-            if (this.balance < value)
+            if (this._balance < value)
             {
                 return false;
             }
             else
             {
-                this.balance -= value;
+                this._balance -= value;
                 current.Deposit(value);
                 return true;
             }
