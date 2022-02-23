@@ -8,9 +8,9 @@ namespace Relations.Employees
 {
     public class Director : Employee
     {
-        public double GetBonus()
+        public override double GetBonus()
         {
-
+            //override - override parent method
             return Salary;
         }
     }

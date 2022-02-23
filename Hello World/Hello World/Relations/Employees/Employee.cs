@@ -14,8 +14,8 @@ namespace Relations.Employees
         public double Salary { get; set; }
 
 
-
-        public double GetBonus()
+        //virtual method - has an implementation but can override
+                public virtual double GetBonus()
         {
 
             return Salary * 0.10;
