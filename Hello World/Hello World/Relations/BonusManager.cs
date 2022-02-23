@@ -14,11 +14,7 @@ namespace Relations
         {
             _totalBonus += employee.GetBonus();
         }
-        public void Register(Director director)
-        {
-            _totalBonus += director.GetBonus();
-        }
-
+       
 
         public double getTotalBonus()
         {
