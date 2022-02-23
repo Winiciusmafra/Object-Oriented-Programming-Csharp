@@ -11,7 +11,8 @@ namespace Relations.Employees
         public override double GetBonus()
         {
             //override - override parent method
-            return Salary;
+
+            return Salary + base.GetBonus();
         }
     }
 }
