@@ -8,6 +8,10 @@ namespace Relations.Employees
 {
     public class Director : Employee
     {
+        public Director(string cpf) : base(cpf)
+        {
+            
+        }
         public override double GetBonus()
         {
             //override - override parent method

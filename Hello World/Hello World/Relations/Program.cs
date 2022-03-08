@@ -12,19 +12,19 @@ namespace Learning_csharp
         {
             BonusManager manager = new BonusManager();
 
-            Employee winicius = new Employee();
-            Employee Fernando = new Director();
+            Employee winicius = new Employee("46743576813");
+            Employee Fernando = new Director("485987541121");
             winicius.Name = "Winicius";
-            winicius.Cpf = "46743576813";
             winicius.Salary = 1000;
 
             Fernando.Name = "Fernando";
-            Fernando.Cpf = "485987541121";
+
             Fernando.Salary = 5333;
             manager.Register(winicius);
             manager.Register(Fernando);
             Console.WriteLine(manager.getTotalBonus());
-            
+            Console.WriteLine(Employee.TotalEmplyee);
+
 
             Console.ReadLine();
         }
