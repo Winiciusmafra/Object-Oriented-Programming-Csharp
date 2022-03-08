@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace Relations.Employees
 {
-    public class Director : Employee
+    public class AccountManager: Employee
     {
-        public Director(double salary ,string cpf) : base(salary,cpf)
+        public AccountManager(double salary, string cpf) : base(salary, cpf)
         {
-            
+
         }
         public override double GetBonus()
         {
             //override - override parent method
 
-            return Salary * 0.5;
+            return Salary * 0.25;
         }
 
         public override void IncreaseSalary()
         {
-            Salary = Salary + (Salary * 0.3);
+            Salary = Salary + (Salary * 0.05);
         }
     }
 }

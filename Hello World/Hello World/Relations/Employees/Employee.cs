@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Relations.Employees
 {
-    public class Employee
+    public abstract class Employee
     {
         public static int TotalEmplyee { get; private set; }
         public string Name { get; set; }

@@ -10,25 +10,34 @@ namespace Learning_csharp
     {
         public static void Main(string[] args)
         {
-            BonusManager manager = new BonusManager();
-
-            Employee winicius = new Employee(1000,"46743576813");
-            Employee Fernando = new Director(5333,"485987541121");
-            winicius.Name = "Winicius";
-            Console.WriteLine("Winicius Salary: "+ winicius.Salary);
-            Fernando.Name = "Fernando";
-           
-            Console.WriteLine("Fernando Salary: " + Fernando.Salary);
-            manager.Register(winicius);
-            manager.Register(Fernando);
-            winicius.IncreaseSalary();
-            Fernando.IncreaseSalary();
-            Console.WriteLine("New salary Winicius " + winicius.Salary);
-            Console.WriteLine("New salary Fernando " + Fernando.Salary);
 
 
+            ReturnBonus();
 
             Console.ReadLine();
+        }
+
+        public static void ReturnBonus()
+        {
+            BonusManager bonusManager = new BonusManager();
+            Employee pedro = new Designer(2300, "883.009.233-46");
+            pedro.Name = "Pedro";
+
+            Employee Mariana = new Director(23300, "883.009.233-34");
+            Mariana.Name = "Mariana";
+
+            Employee Antonio = new Assistant(2300, "883.329.212-76");
+            Antonio.Name = "Antonio";
+
+            Employee Beto = new AccountManager(4300, "883.436.233-43");
+            Beto.Name = "Beto";
+
+            bonusManager.Register(pedro);
+            bonusManager.Register(Mariana);
+            bonusManager.Register(Antonio);
+            bonusManager.Register(Beto);
+
+            Console.WriteLine("Total bonus in the month: R$ " + bonusManager.getTotalBonus());
         }
     }
 }
