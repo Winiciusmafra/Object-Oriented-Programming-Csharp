@@ -13,24 +13,20 @@ namespace Relations.Employees
         public string Cpf { get; private set; }
         public double Salary { get; protected set; }
 
-        public Employee(double salary,string cpf)
+        public Employee(double salary, string cpf)
         {
             this.Salary = salary;
             this.Cpf = cpf;
             TotalEmplyee++;
         }
-        //virtual method - has an implementation but can override
-        public abstract double GetBonus();
-       
-            //derived classes should always override these methods
-           
 
-       
+        public abstract double GetBonus();
+        //derived classes should always override these methods
 
         public abstract void IncreaseSalary();
-        
-            //derived classes should always override these methods
-        
+
+        //derived classes should always override these methods
+
 
 
 

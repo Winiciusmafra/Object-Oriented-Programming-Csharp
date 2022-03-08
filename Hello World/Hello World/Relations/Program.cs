@@ -1,5 +1,6 @@
 ﻿using Relations;
 using Relations.Employees;
+using Relations.Systems;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,21 @@ namespace Learning_csharp
         {
 
 
-            ReturnBonus();
+            //ReturnBonus();
+            userSystem();
 
             Console.ReadLine();
+        }
+
+        public static void userSystem()
+        {
+            InternalSystem internalSystem = new InternalSystem();
+            Director Mariana = new Director(23300, "883.009.233-34");
+            Mariana.Name = "Mariana";
+            Mariana.Password = "1123";
+
+            internalSystem.login(Mariana, "123");
+            internalSystem.login(Mariana, "1123");
         }
 
         public static void ReturnBonus()
