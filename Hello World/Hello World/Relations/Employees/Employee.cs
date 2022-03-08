@@ -20,16 +20,17 @@ namespace Relations.Employees
             TotalEmplyee++;
         }
         //virtual method - has an implementation but can override
-        public virtual double GetBonus()
-        {
+        public abstract double GetBonus();
+       
+            //derived classes should always override these methods
+           
 
-            return Salary * 0.10;
-        }
+       
 
-        public virtual void IncreaseSalary()
-        {
-            Salary = Salary + (Salary * 0.1);
-        }
+        public abstract void IncreaseSalary();
+        
+            //derived classes should always override these methods
+        
 
 
 
