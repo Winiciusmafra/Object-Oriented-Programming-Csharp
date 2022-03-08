@@ -8,7 +8,7 @@ namespace Relations.Employees
 {
     public class Director : Employee
     {
-        public Director(string cpf) : base(cpf)
+        public Director(double salary ,string cpf) : base(salary,cpf)
         {
             
         }
@@ -17,6 +17,11 @@ namespace Relations.Employees
             //override - override parent method
 
             return Salary + base.GetBonus();
+        }
+
+        public override void IncreaseSalary()
+        {
+            Salary = Salary + (Salary * 0.3);
         }
     }
 }

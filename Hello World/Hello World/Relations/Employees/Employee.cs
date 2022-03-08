@@ -11,18 +11,24 @@ namespace Relations.Employees
         public static int TotalEmplyee { get; private set; }
         public string Name { get; set; }
         public string Cpf { get; private set; }
-        public double Salary { get; set; }
+        public double Salary { get; protected set; }
 
-        public Employee(string cpf)
-        {   
-            this.Cpf = cpf; 
+        public Employee(double salary,string cpf)
+        {
+            this.Salary = salary;
+            this.Cpf = cpf;
             TotalEmplyee++;
         }
         //virtual method - has an implementation but can override
-                public virtual double GetBonus()
+        public virtual double GetBonus()
         {
 
             return Salary * 0.10;
+        }
+
+        public virtual void IncreaseSalary()
+        {
+            Salary = Salary + (Salary * 0.1);
         }
 
 
