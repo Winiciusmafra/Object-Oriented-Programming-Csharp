@@ -8,10 +8,13 @@ namespace Relations.Employees
 {
     public abstract class Employee
     {
+        
         public static int TotalEmplyee { get; private set; }
         public string Name { get; set; }
         public string Cpf { get; private set; }
         public double Salary { get; protected set; }
+
+       
 
         public Employee(double salary, string cpf)
         {

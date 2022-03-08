@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Relations.Systems;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,26 +7,16 @@ using System.Threading.Tasks;
 
 namespace Relations.Employees
 {
-    public class Director : Employee
+    public class Director : Authentication
     {
-        public string  Password { get; set; }
+     
 
         public Director(double salary ,string cpf) : base(salary,cpf)
         {
             
         }
 
-        public bool Authenticated(string password)
-        {
-            if (this.Password == password)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+      
         public override double GetBonus()
         {
             //override - override parent method

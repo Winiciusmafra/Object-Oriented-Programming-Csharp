@@ -9,7 +9,7 @@ namespace Relations.Systems
 {
     public class InternalSystem
     {
-        public bool login(Director employee, string password)
+        public bool login(Authentication employee, string password)
         {
             bool userAuthenticated = employee.Authenticated(password);
             if (userAuthenticated)
