@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Relations.Employees
 {
-    public class Director : Authentication
+    public class Director : EmployeeAuthenticated
     {
      
 
@@ -16,7 +16,11 @@ namespace Relations.Employees
             
         }
 
-      
+        public bool Authenticated(string password)
+        {
+            return true;
+        }
+
         public override double GetBonus()
         {
             //override - override parent method

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Relations.Employees
 {
-    public class AccountManager: Employee
+    public class AccountManager: EmployeeAuthenticated
     {
         public AccountManager(double salary, string cpf) : base(salary, cpf)
         {

@@ -1,19 +1,14 @@
-﻿using Relations.Employees;
+﻿using Relations.Systems;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Relations.Systems
+namespace Relations
 {
-
-    public abstract class Authentication : Employee
+    public class Partner : IAuthentication
     {
-        public Authentication(double salary, string cpf) : base(salary, cpf)
-        {
-        }
-
         public string Password { get; set; }
 
         public bool Authenticated(string password)
@@ -27,6 +22,5 @@ namespace Relations.Systems
                 return false;
             }
         }
-
     }
 }

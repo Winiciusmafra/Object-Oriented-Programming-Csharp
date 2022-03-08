@@ -28,6 +28,12 @@ namespace Learning_csharp
 
             internalSystem.login(Mariana, "123");
             internalSystem.login(Mariana, "1123");
+
+            Partner partner = new Partner();
+            partner.Password = "203";
+
+            internalSystem.login(partner, "203");
+            internalSystem.login(partner, "2023");
         }
 
         public static void ReturnBonus()
